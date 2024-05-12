@@ -75,7 +75,4 @@ jobs:
         with:
           app-name: 'IN2000-reverseregionlookup'
           slot-name: 'Production'
-
-      - name: Set environment variable for region data URL
-        run: echo "REGION_DATA_URL=${{ secrets.REGION_DATA_URL }}" >> $GITHUB_ENV
           
