@@ -8,25 +8,68 @@
 </head>
 <body>
     <div class="container">
-        <h1>Region Finder API Documentation</h1>
-        <p>Welcome to the Region Finder API. Use this API to determine the region based on latitude and longitude.</p>
+        <h1>Region Finder & Pollen API Documentation</h1>
+        <p>Welcome to the pollen api proxy.</p>
 
         <h2>Endpoints</h2>
 
         <h3>GET /find_region</h3>
-        <p>Returns the region for the given latitude and longitude.</p>
+        <p>Returns the region for the given latitude and longitude. Useful if you want to
+        implement your own mapping from pollen regions to municipalities</p>
         <h4>Parameters:</h4>
         <ul>
             <li><strong>lat</strong> (float): Latitude of the location</li>
             <li><strong>lon</strong> (float): Longitude of the location</li>
         </ul>
         <h4>Example Request:</h4>
-        <pre>GET /find_region?lat=59.9139&lon=10.7522</pre>
+        <div class="code-block">
+            <pre>GET /find_region?lat=59.9139&lon=10.7522</pre>
+        </div>
 
         <h4>Example Response:</h4>
-        <pre>{
+        <div class="code-block">
+            <pre>{
     "region": "Oslo"
 }</pre>
+        </div>
+
+        <h3>GET /pollen</h3>
+        <p>Returns the pollen data for the given latitude and longitude.</p>
+        <h4>Parameters:</h4>
+        <ul>
+            <li><strong>lat</strong> (float): Latitude of the location</li>
+            <li><strong>lon</strong> (float): Longitude of the location</li>
+        </ul>
+        <h4>Example Request:</h4>
+        <div class="code-block">
+            <pre>GET /pollen?lat=59.9139&lon=10.7522</pre>
+        </div>
+
+        <h4>Example Response:</h4>
+        <div class="code-block">
+            <pre>{
+    "region": "Oslo",
+    "pollen_data": [ ... ]
+}</pre>
+        </div>
+
+        <h3>GET /pollen/regions</h3>
+        <p>Returns the list of pollen regions.</p>
+        <h4>Example Request:</h4>
+        <div class="code-block">
+            <pre>GET /pollen/regions</pre>
+        </div>
+
+        <h4>Example Response:</h4>
+        <div class="code-block">
+            <pre>[
+    {
+        "displayName": "Finnmark",
+        "id": "finnmark"
+    },
+    ...
+]</pre>
+        </div>
     </div>
 </body>
 </html>

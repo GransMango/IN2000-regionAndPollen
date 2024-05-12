@@ -34,3 +34,5 @@ def load_geojson():
 
 
 GDF = load_geojson()
+API_KEY = os.getenv('POLLENVARSEL_API_KEY')
+BASE_URL = "https://pollenvarsel.naaf.no/api"

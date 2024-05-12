@@ -4,23 +4,30 @@ body {
     margin: 0;
     padding: 0;
 }
-
 .container {
     width: 80%;
     margin: auto;
-    overflow: hidden;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
 h1, h2, h3 {
     color: #333;
 }
-
 p, ul, pre {
     color: #666;
 }
-
 pre {
     background: #eee;
     padding: 10px;
     border-radius: 5px;
+    overflow-x: auto;
+}
+.code-block {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-bottom: 20px;
 }
