@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p, ul, pre {
+    color: #666;
+}
+
+pre {
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}

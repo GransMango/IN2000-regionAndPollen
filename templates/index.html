@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Region Finder API Documentation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Region Finder API Documentation</h1>
+        <p>Welcome to the Region Finder API. Use this API to determine the region based on latitude and longitude.</p>
+
+        <h2>Endpoints</h2>
+
+        <h3>GET /find_region</h3>
+        <p>Returns the region for the given latitude and longitude.</p>
+        <h4>Parameters:</h4>
+        <ul>
+            <li><strong>lat</strong> (float): Latitude of the location</li>
+            <li><strong>lon</strong> (float): Longitude of the location</li>
+        </ul>
+        <h4>Example Request:</h4>
+        <pre>GET /find_region?lat=59.9139&lon=10.7522</pre>
+
+        <h4>Example Response:</h4>
+        <pre>{
+    "region": "Oslo"
+}</pre>
+    </div>
+</body>
+</html>
