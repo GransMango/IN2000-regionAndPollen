@@ -10,7 +10,7 @@ def download_geojson():
     response = requests.get(url)
     response.raise_for_status()  # Ensure the request was successful
     os.makedirs('data', exist_ok=True)
-    with open('data/Basisdata_0000_Norge_25833_Fylker_GeoJSON.geojson', 'wb') as f:
+    with open('data/Basisdata_Cleaned.geojson', 'wb') as f:
         f.write(response.content)
 
 
