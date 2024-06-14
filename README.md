@@ -21,8 +21,8 @@ The API was made for a weather app for the school project IN2000
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/your-username/flask-geospatial-pollen.git
-   cd flask-geospatial-pollen
+   git clone https://github.com/GransMango/IN2000-regionAndPollen
+   cd IN2000-regionAndPollen
    ```
 2. Create a virtual environment and activate it:
 
